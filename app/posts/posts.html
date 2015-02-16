@@ -3,8 +3,8 @@
   <h2>
     <a href="#/posts/{{post.id}}">{{post.title}}</a>
   </h2>
-  <h3 ng-repeat="user in users" ng-show="{{user.id=== post.user_id}}">
-    By: <a href="#/users/{{user.id}}">{{user.first_name}}</a>
+  <h3>
+    By: <a href="#/users/{{user.id}}">{{post.user.first_name}}</a>
   </h3>
   <p>{{post.body}}</p>
 </section>

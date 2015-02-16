@@ -1,12 +1,12 @@
 <section class="user-show">
   <h2>{{user.first_name}}</h2>
   <h3>Posts</h3>
-  <ul ng-repeat="post in posts">
+  <ul ng-repeat="post in user.posts">
     <li><a href="#posts/{{post.id}}">{{post.title}}</a></li>
   </ul>
   <h3>Comments</h3>
-  <ul ng-repeat="comment in comments">
-    <li ng-repeat="post in posts" ng-show="{{post.id === comment.post_id}}"><a href="#posts/{{comment.post_id}}">{{post.title}}</a>
-    <blockquote>"{{comment.body}}"</blockquote></li>
+  <ul ng-repeat="comment in user.comments">
+    <li><a href="#posts/{{comment.post_id}}">{{comment.post.title}}</a>
+    <blockquote>"{{comment.post.body}}"</blockquote></li>
   </ul>
 </section>
