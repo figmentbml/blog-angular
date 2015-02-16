@@ -1,0 +1,58 @@
+/* app css stylesheet */
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+html, body {
+  color: rgba(70,119,90, 1);
+  font-family: 'Slabo 27px', serif;
+}
+
+body {
+  background-color: rgba(17,47,109, 1);
+}
+
+.welcome {
+  padding: 2%;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid rgba(236,179,159, 1);
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+  margin: 0 2% 0 2%;
+}
+
+.menu a {
+  color: rgba(70,119,90, 1);
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+.wrapper {
+  background-color: rgba(255,244,206, 1);
+  margin: 3% 5% 0 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+section a {
+  color: rgba(70,119,90, 1);
+}
