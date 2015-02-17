@@ -17,7 +17,6 @@ posts.config(['$routeProvider', function($routeProvider) {
 posts.controller('PostsCtrl', ['$scope', '$http', function($scope, $http) {
   $http.get('http://localhost:3000/posts/').success(function(data) {
     $scope.posts = data.posts;
-    $scope.users = data.users;
   });
 }]);
 
@@ -25,7 +24,5 @@ posts.controller('PostDetailCtrl', ['$scope', '$routeParams', '$http',
 function($scope, $routeParams, $http) {
   $http.get('http://localhost:3000/posts/' + $routeParams.postId).success(function(data) {
     $scope.post = data.post;
-    $scope.users = data.users;
-    $scope.comments = data.comments
   });
 }]);

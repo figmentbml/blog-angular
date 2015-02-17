@@ -24,7 +24,5 @@ blog.controller('UsersDetailCtrl', ['$scope', '$routeParams', '$http',
 function($scope, $routeParams, $http) {
   $http.get('http://localhost:3000/users/' + $routeParams.userId).success(function(data) {
     $scope.user = data.user;
-    $scope.posts = data.posts;
-    $scope.comments = data.comments
   });
 }]);
