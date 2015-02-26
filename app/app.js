@@ -6,7 +6,7 @@ angular.module('blog', [
   'blog.about',
   'blog.posts',
   'blog.users',
-  'blog.version'
+  'blog.version',
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/posts'});

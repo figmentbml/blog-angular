@@ -1,0 +1,15 @@
+<h2>New Post</h2>
+
+<form name="newPost" ng-submit="createPost()">
+  <h2>
+    <textarea placeholder="Title it" ng-model="title" cols="30" rows="1"></textarea>
+  </h2>
+  <p>
+    <textarea placeholder="Share your lifestory here..." ng-model="body" cols="30" rows="10"></textarea>
+  </p>
+  <label>by:</label>
+  <select name="" id=userId>
+    <option ng-repeat="user in users" value="{{user.id}}">{{user.first_name}}</option>
+  </select>
+  <button type="submit">Submit</button>
+</form>
